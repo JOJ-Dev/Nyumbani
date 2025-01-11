@@ -31,6 +31,9 @@
             <a class="nav-item nav-link" href="#">Features</a>
             <a class="nav-item nav-link" href="#">Pricing</a>
           </div>
+          {% if user.is_authenticated %}
+          <h1>{{user.username}}</h1>
+          {% else %}
           <!-- Right navigation -->
           <div class="navbar-nav ms-lg-4">
             <a class="nav-item nav-link" href="#">Sign in</a>
@@ -41,6 +44,7 @@
               Register
             </a>
           </div>
+          {% endif %}
         </div>
       </div>
     </nav>
