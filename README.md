@@ -1,4 +1,4 @@
-NYUMBANI 
+NYUMBANI RENTAL MANAGEMENT SYSTEM
 
 A simple way for Landlords to manage their appartments.
 
