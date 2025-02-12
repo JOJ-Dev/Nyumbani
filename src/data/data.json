@@ -1,0 +1,50 @@
+{
+  "Header": {
+    "title": "Nyumbani",
+    "paragraph": "Appartment management system for Landlords and Tenants."
+  },
+  "About": {
+    "paragraph": "We are a versitile company based in Nairobi Kenya and we offer support services to apartments needing our services as Landlords can manage their apartments easily with less effort.",
+    "Why": [
+      "Easy to Use",
+      "Versitile to any location",
+      "Fast Customer Service",
+      "Reliable"
+    ],
+    "Why2": [
+      "Sends Reminders",
+      "Generates Payment Reports",
+      "Confirmation Reciepts"
+    ]
+  },
+  "Contact": {
+    "address": "00100 Nairobi Kenya, Kasarani",
+    "phone": "+254722714334",
+    "email": "georgem.gichuru@gmail.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-credit-card",
+      "title": "Payment",
+      "text": "Fast and easy to pay rent and added bills on a scheduled basis."
+    },
+    {
+      "icon": "fa fa-line-chart",
+      "title": "Statistical Reports",
+      "text": "Track payments and get statistical results in form of charts."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Tenant Management",
+      "text": "Manage Tenants in their apartments and get feedback from them."
+    },
+    {
+      "icon": "fa fa-file-text",
+      "title": "Confirmation Reciepts",
+      "text": "Get email and message confirmation reciepts for rent payment and additional bills."
+    }
+  ]
+}
