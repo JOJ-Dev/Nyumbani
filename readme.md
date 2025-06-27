@@ -1,5 +1,5 @@
-![Forks](https://img.shields.io/badge/forks-44-blue)
-![Stars](https://img.shields.io/badge/stars-13-yellow)
+![Forks](https://img.shields.io/badge/forks-0-blue)
+![Stars](https://img.shields.io/badge/stars-0-yellow)
 
 # Nyumbani - Rental Management System
 
@@ -14,3 +14,22 @@ We welcome any and all contributions! Here are some ways you can get started:
 3. Suggestions: If you don't want to code but have some awesome ideas, open up an issue explaining some updates or imporvements you would like to see!
 4. Documentation: If you see the need for some additional documentation, feel free to add some!
 
+## Technology used
+---
+- HTML5
+- CSS3 
+- JAVASCRIPT(EA6)
+- REACT V17.0.2
+- REACT DOM V17.0.2
+- REACT ROUTER DOM V6.0.2
+- REACT ROUTER V6.0.2
+- NODE JS V16.13.0
+- MATERIAL UI V5.1.0
+
+## known bugs
+
+
+
+## Contact Information
+***
+You can reach me via 
