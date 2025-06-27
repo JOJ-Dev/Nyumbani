@@ -29,7 +29,7 @@ We welcome any and all contributions! Here are some ways you can get started:
 ## known bugs
 
 
+## Author
+---
 
-## Contact Information
-***
-You can reach me via 
+*** George Gichuru ***
