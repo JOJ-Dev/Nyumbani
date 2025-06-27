@@ -10,9 +10,8 @@ Nyumbani is a system designed to help landlords in managing their rental propert
 ## Contributing
 We welcome any and all contributions! Here are some ways you can get started:
 1. Report bugs: If you encounter any bugs, please let us know. Open up an issue and let us know the problem.
-2. Contribute code: If you are a developer and want to contribute, follow the instructions below to get started!
-3. Suggestions: If you don't want to code but have some awesome ideas, open up an issue explaining some updates or imporvements you would like to see!
-4. Documentation: If you see the need for some additional documentation, feel free to add some!
+2. Suggestions: If you don't want to code but have some awesome ideas, open up an issue explaining some updates or imporvements you would like to see!
+3. Documentation: If you see the need for some additional documentation, feel free to add some!
 
 ## Features
 - Landlord and Tenant Account Management
@@ -26,7 +25,6 @@ We welcome any and all contributions! Here are some ways you can get started:
 ## Technology used
 --- 
 Frontend
-
 - HTML5
 - CSS
 - Javascript
@@ -34,17 +32,13 @@ Frontend
 - Tailwind
 
 Backend
-
 - Python
 - Django
-- 
 
 Database
-
 - PostgreSQL
 
 API testing
-
 - Postman
 
 ## known bugs
