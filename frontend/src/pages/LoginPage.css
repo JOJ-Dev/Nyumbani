@@ -1,0 +1,144 @@
+/* Base Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.login-form:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.login-form h2 {
+  color: #212529;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.15);
+}
+
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: #4dabf7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #339af0;
+  transform: translateY(-1px);
+}
+
+.login-form input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Link Styles */
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #495057;
+  font-size: 0.95rem;
+}
+
+.login-link a {
+  color: #4dabf7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.login-link a:hover {
+  color: #339af0;
+  text-decoration: underline;
+}
+
+/* Error Message Styles */
+.error-message {
+  color: #e03131;
+  background-color: #fff5f5;
+  padding: 0.875rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  border-left: 4px solid #e03131;
+}
+
+/* Role Selection */
+.role-selection {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+}
+
+.role-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.role-option input {
+  margin-right: 0.75rem;
+  accent-color: #4dabf7;
+}
+
+.role-option label {
+  color: #495057;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .login-form {
+    padding: 1.75rem;
+  }
+  
+  .login-form h2 {
+    font-size: 1.5rem;
+  }
+}

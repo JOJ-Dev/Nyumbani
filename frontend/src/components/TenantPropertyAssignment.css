@@ -1,0 +1,283 @@
+/* Tenant Property Assignment - Modern Styling */
+.tenant-assignment-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.tenant-assignment-container:hover {
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+}
+
+.tenant-assignment-container h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.tenant-assignment-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+.form-group {
+    margin-bottom: 1.75rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: #34495e;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.form-group select,
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group select:focus,
+.form-group input[type="date"]:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    transform: translateY(-1px);
+}
+
+.form-group select:hover,
+.form-group input[type="date"]:hover {
+    border-color: #dee2e6;
+}
+
+.form-group select option {
+    padding: 0.5rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+button:hover:not(:disabled)::before {
+    left: 100%;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+button:disabled {
+    background: linear-gradient(135deg, #bdc3c7 0%, #95a5a6 100%);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.error-message {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+    animation: shake 0.5s ease-in-out;
+}
+
+.success-message {
+    background: linear-gradient(135deg, #51cf66 0%, #40c057 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(64, 192, 87, 0.2);
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.success-message h3 {
+    color: white;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.success-message p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.no-property-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.no-property-section h3 {
+    color: #495057;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.no-property-section p {
+    color: #6c757d;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tenant-assignment-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .tenant-assignment-container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-group select,
+    .form-group input[type="date"] {
+        padding: 0.875rem 1rem;
+    }
+    
+    button {
+        padding: 0.875rem 1.25rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tenant-assignment-container {
+        margin: 0.5rem;
+        padding: 1.25rem;
+    }
+    
+    .tenant-assignment-container h2 {
+        font-size: 1.375rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* Loading State */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Focus styles for accessibility */
+.form-group select:focus-visible,
+.form-group input[type="date"]:focus-visible {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Custom scrollbar for select dropdown */
+select::-webkit-scrollbar {
+    width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+select::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 4px;
+}
+
+select::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}

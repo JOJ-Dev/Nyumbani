@@ -1,0 +1,141 @@
+/* Base Container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Form Styling */
+.register-form {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.register-form:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.register-form h2 {
+  color: #212529;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #495057;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.15);
+}
+
+/* Phone Number Input Specific */
+input[type="tel"] {
+  letter-spacing: 0.5px;
+}
+
+/* Checkbox Styling */
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.checkbox input {
+  width: auto;
+  margin-right: 0.75rem;
+  accent-color: #4dabf7;
+}
+
+.checkbox label {
+  margin-bottom: 0;
+  color: #495057;
+  cursor: pointer;
+}
+
+/* Button Styling */
+.btn-primary {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: #4dabf7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #339af0;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Messages */
+.error-message {
+  color: #e03131;
+  background-color: #fff5f5;
+  padding: 0.875rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  border-left: 4px solid #e03131;
+}
+
+.success-message {
+  color: #2b8a3e;
+  background-color: #ebfbee;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  text-align: center;
+  border-left: 4px solid #2b8a3e;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .register-form {
+    padding: 1.75rem;
+  }
+  
+  .register-form h2 {
+    font-size: 1.5rem;
+  }
+}

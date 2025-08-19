@@ -1,0 +1,79 @@
+.landlord-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.landlord-dashboard h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.landlord-dashboard > p {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.dashboard-content h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.dashboard-content > p {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.stat-card h3 {
+    margin: 0 0 10px 0;
+    color: #34495e;
+    font-size: 1.1rem;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+    .landlord-dashboard {
+        padding: 10px;
+    }
+    
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+.stat-card .amount {
+    font-size: 1.8rem;
+    color: #28a745;
+    margin-bottom: 0.25rem;
+}
+
+.stat-card .month-context {
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: normal;
+}
